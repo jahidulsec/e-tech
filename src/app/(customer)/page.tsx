@@ -1,8 +1,11 @@
+import Home from '@/container/home/Home'
 import React from 'react'
 
 function HomePage() {
   return (
-    <div className='bg-red-400'>HomePage</div>
+    <>
+      <Home />
+    </>
   )
 }
 
