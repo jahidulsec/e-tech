@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ProgressProvider from "@/contexts/ProgressProvider";
 import { ThemeProvider } from "@/contexts/ThemeProvider";
+import 'remixicon/fonts/remixicon.css'
+
 
 export const metadata: Metadata = {
   title: "eTech",

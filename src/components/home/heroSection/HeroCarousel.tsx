@@ -9,13 +9,13 @@ import {
   CarouselPrevious,
   CarouselNext,
   CarouselDotButtons,
-} from "../ui/carousel";
+} from "@/components/ui/carousel";
 import { heroData } from "@/lib/data";
 import Image from "next/image";
 
-function HeroSection() {
+function HeroCarousel() {
   return (
-    <section className="">
+    <>
       <Carousel
         opts={{
           loop: true,
@@ -29,18 +29,19 @@ function HeroSection() {
         <CarouselContent>
           {heroData.map((item) => (
             <CarouselItem key={item.id}>
-              <div className="relative w-full aspect-[3/2] md:aspect-[16/5]">
+              <div className="relative w-full aspect-[16/7] md:aspect-[16/5]">
                 <Image src={item.imagePath} fill alt="" objectFit="cover" />
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
         <CarouselPrevious />
-        <CarouselDotButtons/>
+        <CarouselDotButtons />
         <CarouselNext />
       </Carousel>
-    </section>
+      
+    </>
   );
 }
 
-export default HeroSection;
+export default HeroCarousel;

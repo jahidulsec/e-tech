@@ -8,7 +8,7 @@ import NavLink from "@/components/navbar/navlink/NavLink";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 bg-background">
+    <header className="sticky top-0 bg-background z-10">
 
     <nav className="py-3 flex justify-between items-center border-b mx-5">
       <div className="left">
