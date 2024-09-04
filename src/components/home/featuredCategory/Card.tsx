@@ -8,7 +8,7 @@ function Card({id, title, icon}: CardProps) {
     <>
       <article
         key={id}
-        className="bg-accent/50 dark:bg-transparent border border-transparent dark:border-secondary dark:hover:border-tertiary hover:border-tertiary 
+        className="cursor-pointer bg-accent/50 dark:bg-transparent border border-transparent dark:border-secondary dark:hover:border-tertiary hover:border-tertiary 
             w-[10rem] aspect-square rounded flex flex-col justify-center items-center gap-5
             hover:-translate-y-2 hover:shadow-sm transition-all duration-500
             "
