@@ -17,7 +17,7 @@ function ThemeButton() {
       <Button
         size={"icon"}
         variant={"text"}
-        className="text-gray-400"
+        className="text-gray-500 dark:text-gray-200"
         onClick={() => {
           if (theme == "dark") {
             setTheme("light");

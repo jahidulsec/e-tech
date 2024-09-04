@@ -16,7 +16,7 @@ function Footer() {
           ))}
         </div>
 
-        <p className="text-xs text-gray-400">© {new Date().getFullYear()} eTech, Inc. All rights reserved.</p>
+        <p className="text-xs text-gray-500">© {new Date().getFullYear()} eTech, Inc. All rights reserved.</p>
       </div>
     </footer>
   );
