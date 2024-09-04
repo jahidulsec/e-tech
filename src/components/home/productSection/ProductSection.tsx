@@ -5,11 +5,16 @@ import CardContainer from "@/components/product/gridCard/CardContainer";
 import { trendingProducts } from "@/lib/data";
 import React from "react";
 
-function TrendingSection() {
+type ProductSectionProps = {
+  sectionTitle: string
+}
+
+
+function TrendingSection({sectionTitle}: ProductSectionProps) {
   return (
     <section className="my-20">
       <div className="flex justify-between items-center gap-x-3 md:gap-5 flex-wrap">
-        <SectionHeading>Trending Products</SectionHeading>
+        <SectionHeading>{sectionTitle}</SectionHeading>
         <SeeMoreButton title="See more" />
       </div>
 

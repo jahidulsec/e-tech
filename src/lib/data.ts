@@ -86,3 +86,54 @@ export const trendingProducts = [
     },
 ]
 
+
+export const footerItems = [
+    {
+        id: 1,
+        title: 'Products',
+        links: [
+            "Bags",
+            "Tees",
+            "Objects",
+            "Home Goods",
+            "Accessories"
+        ]
+    },
+    {
+        id: 2,
+        title: 'Customer Service',
+        links: [
+            "Contact",
+            "Shipping",
+            "Returns",
+            "Warranty",
+            "Secure Payments",
+            "FAQ",
+            "Find a store"
+        ]
+    },
+    {
+        id: 3,
+        title: 'Company',
+        links: [
+            "Who we are",
+            "Sustainability",
+            "Careers",
+            "Terms & Conditions",
+            "Privacy"
+        ]
+    },
+    {
+        id: 4,
+        title: 'Legal',
+        links: [
+            "Terms of Service",
+            "Return Policy",
+            "Privacy Policy",
+            "Shipping Policy"
+        ]
+    },
+
+
+]
+
