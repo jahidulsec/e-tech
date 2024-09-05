@@ -1,3 +1,4 @@
+import { Pagination } from "@/components/Pagination/Pagination";
 import Card from "@/components/product/gridCard/Card";
 import CardContainer from "@/components/product/gridCard/CardContainer";
 import { Button } from "@/components/ui/button";
@@ -45,12 +46,16 @@ function CategoryPageContainer() {
       </div>
 
       {/* products */}
-      <div className=" px-4 md:px-8 xl:container mx-auto mb-20">
+      <div className="px-4 md:px-8 xl:container mx-auto mb-20">
         <CardContainer className="mt-0 border-t-0">
           {trendingProducts.map((item) => (
             <Card {...item} />
           ))}
         </CardContainer>
+      </div>
+
+      <div className="pagination px-4 md:px-8 xl:container mx-auto">
+        <Pagination limit={1} count={10} />
       </div>
     </div>
   );
