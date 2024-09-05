@@ -9,7 +9,7 @@ export function titleCase(title: string) {
   
   
   export const formatCurrency = (amount: number) => {
-      return `${new Intl.NumberFormat("en-IN").format(amount)} \u09F3`
+      return `${new Intl.NumberFormat("en-IN").format(amount)}`
   }
   
   const NUMBER_FORMATTER = new Intl.NumberFormat("en-IN");

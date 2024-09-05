@@ -4,7 +4,7 @@ import HeaderSearch from "../../components/Search/HeaderSearch";
 import ThemeButton from "../../components/buttons/ThemeButton";
 import { Button } from "../../components/ui/button";
 import NavLink from "@/components/navbar/navlink/NavLink";
-import Logo from "@/assets/Logo";
+import Logo from "@/components/logo/Logo";
 
 export default function Navbar() {
   return (

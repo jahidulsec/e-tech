@@ -1,4 +1,4 @@
-import Logo from "@/assets/Logo";
+import Logo from "@/components/logo/Logo";
 import NavList from "@/components/footer/NavList";
 import { footerItems } from "@/lib/data";
 import Link from "next/link";

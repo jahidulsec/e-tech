@@ -1,3 +1,4 @@
+import CurrencyText from "@/components/heading/CurrencyText";
 import Rating from "@/components/rating/Rating";
 import { trendingProducts } from "@/lib/data";
 import { formatCurrency } from "@/lib/formatter";
@@ -16,12 +17,7 @@ function Card({
       <article className="p-5 border-r border-b group hover:cursor-pointer">
         <div className="w-full aspect-square p-10 bg-gray-50 dark:bg-accent-foreground rounded overflow-hidden mb-5">
           <div className="relative w-full mix-blend-multiply group-hover:scale-125 aspect-square transition-all duration-500">
-            <Image
-              fill
-              objectFit="cover"
-              src={imagePath}
-              alt=""
-            />
+            <Image fill objectFit="cover" src={imagePath} alt="" />
           </div>
         </div>
         <div className="info flex flex-col justify-center items-center gap-5">
@@ -35,7 +31,9 @@ function Card({
           <div className="">
             <Rating noOfStars={rating} />
           </div>
-          <h4 className="text-primary tex-sm">{formatCurrency(price)}</h4>
+          <h4 className="text-primary tex-sm">
+            <CurrencyText currency={price} />
+          </h4>
         </div>
       </article>
     </>

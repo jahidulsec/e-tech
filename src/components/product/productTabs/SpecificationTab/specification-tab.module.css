@@ -1,0 +1,4 @@
+.table :where(th,td) {
+    font-size: 12px;
+    padding-block: 0.75rem;
+}
