@@ -1,6 +1,7 @@
 import ImageSection from "@/components/product/imageSection/ImageSection";
 import ProductDetails from "@/components/product/productDetails/ProductDetails";
 import ProductTabs from "@/components/product/productTabs/ProductTabs";
+import RelatedProductSection from "@/components/product/relatedProductSection/RelatedProductSection";
 import { productData } from "@/lib/data";
 import React from "react";
 
@@ -21,6 +22,9 @@ function ProductContainer() {
           <ProductTabs />
         </section>
         {/* end product section */}
+
+        {/* related product */}
+        <RelatedProductSection />
       </div>
     </>
   );

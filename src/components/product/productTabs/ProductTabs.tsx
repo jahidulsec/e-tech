@@ -11,7 +11,7 @@ function ProductTabs() {
           <TabsTrigger value="reviews">Customer Reviews</TabsTrigger>
           <TabsTrigger value="specificaiton">Specifications</TabsTrigger>
         </TabsList>
-        <TabsContent value="specificaiton">
+        <TabsContent className="pt-5" value="specificaiton">
           <SpecificationTab />
         </TabsContent>
         <TabsContent className="pt-5" value="reviews">

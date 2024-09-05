@@ -10,7 +10,7 @@ type ProductSectionProps = {
 }
 
 
-function TrendingSection({sectionTitle}: ProductSectionProps) {
+function ProductSection({sectionTitle}: ProductSectionProps) {
   return (
     <section className="my-20">
       <div className="flex justify-between items-center gap-x-3 md:gap-5 flex-wrap">
@@ -28,4 +28,4 @@ function TrendingSection({sectionTitle}: ProductSectionProps) {
   );
 }
 
-export default TrendingSection;
+export default ProductSection;
