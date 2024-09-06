@@ -1,7 +1,8 @@
+'use client'
+
 import CurrencyText from "@/components/heading/CurrencyText";
 import Rating from "@/components/rating/Rating";
 import { trendingProducts } from "@/lib/data";
-import { formatCurrency } from "@/lib/formatter";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -11,10 +12,13 @@ function Card({
   imagePath,
   rating,
   price,
+  id
 }: (typeof trendingProducts)[0]) {
+
+
   return (
     <>
-      <article className="p-5 border-r border-b group hover:cursor-pointer">
+      <Link role="article" href={`/product/${id}`} className="p-5 border-r border-b group hover:cursor-pointer" >
         <div className="w-full aspect-square p-10 bg-gray-50 dark:bg-accent-foreground rounded overflow-hidden mb-5">
           <div className="relative w-full mix-blend-multiply group-hover:scale-125 aspect-square transition-all duration-500">
             <Image fill objectFit="cover" src={imagePath} alt="" />
@@ -35,7 +39,7 @@ function Card({
             <CurrencyText currency={price} />
           </h4>
         </div>
-      </article>
+      </Link>
     </>
   );
 }

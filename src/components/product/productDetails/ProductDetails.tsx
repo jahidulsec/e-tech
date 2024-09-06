@@ -12,7 +12,7 @@ function ProductDetails({ data }: { data: typeof productData }) {
     <>
       <div className="product-details md:row-span-2">
         <article className="header flex flex-col gap-8 ">
-          <h2 className="text-2xl font-bold ">{data.name}</h2>
+          <h2 className="text-lg md:text-2xl font-semibold ">{data.name}</h2>
           {/* price */}
           <div className="product-state flex flex-wrap items-center gap-3 md:gap-5">
             <h3 className="text-md md:text-xl text-primary">

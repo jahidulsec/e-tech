@@ -31,7 +31,7 @@ function ImageSection({ data }: { data: typeof productData }) {
                 key={item.id}
                 className={`${
                   selectedImage + 1 === item.id ? "border border-primary" : null
-                } bg-gray-50 w-1/6 shrink-0 p-5 dark:bg-accent-foreground rounded overflow-hidden transition-all duration-500`}
+                } bg-gray-50 w-1/4 md:w-1/5 min-w-[100px] max-w-[200px] shrink-0 p-5 dark:bg-accent-foreground rounded overflow-hidden transition-all duration-500`}
                 onClick={() => {
                   setSelectedImage(item.id - 1);
                 }}
