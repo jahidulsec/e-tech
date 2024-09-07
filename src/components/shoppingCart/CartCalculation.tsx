@@ -1,6 +1,7 @@
 import React from "react";
 import CurrencyText from "../heading/CurrencyText";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 function CartCalculation() {
   return (
@@ -34,7 +35,9 @@ function CartCalculation() {
             </p>
           </div>
 
-          <Button size={"lg"}>Checkout</Button>
+          <Button asChild size={"lg"}>
+            <Link href={'/checkout'}>Checkout</Link>
+          </Button>
         </div>
       </article>
     </section>
