@@ -1,11 +1,12 @@
 import { featuredCategory } from "@/lib/data";
+import Link from "next/link";
 import React from "react";
 
 type CardProps = typeof featuredCategory[0]
 
 function Card({id, title, icon}: CardProps) {
   return (
-    <>
+    <Link href={`/category/${id}`}>
       <article
         key={id}
         className="cursor-pointer bg-accent/50 dark:bg-transparent border border-transparent dark:border-secondary dark:hover:border-tertiary hover:border-tertiary 
@@ -18,7 +19,7 @@ function Card({id, title, icon}: CardProps) {
         </div>
         <h3 className="text-sm text-secondary-foreground">{title}</h3>
       </article>
-    </>
+    </Link>
   );
 }
 
