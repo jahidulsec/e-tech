@@ -8,6 +8,7 @@ import SearchSection from "@/components/navbar/SearchSection";
 import { useState } from "react";
 import RightSection from "@/components/navbar/RightSection";
 import NavSection from "@/components/navbar/NavSection";
+import MobileMenuSection from "@/components/navbar/MobileMenuSection";
 
 export default function Navbar() {
   const [showSearchBar, setShowSearchBar] = useState(false);
@@ -21,18 +22,19 @@ export default function Navbar() {
             <Logo />
           </div>
 
-          {/* desktop */}
-          <div className="left md:mx-auto">
+          {/* nav middle*/}
+          <div className="middle md:mx-auto">
+            {/* mobile left */}
             <div className="icons text-gray-400 flex items-center gap-1 md:gap-5 md:hidden">
-              <Button size={"icon"} variant={"text"} className="text-gray-400">
-                <Menu className="size-6" />
-              </Button>
+              <MobileMenuSection />
               <HeaderSearch
                 onClick={() => {
                   setShowSearchBar(true);
                 }}
               />
             </div>
+
+            {/* desktop middle */}
             <NavSection />
           </div>
 

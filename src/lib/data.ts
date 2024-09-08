@@ -187,3 +187,95 @@ export const reviewData = [
       "Really happy with look and options of these icons. I've found uses for them everywhere in my recent projects. I hope there will be 20px versions in the future!",
   },
 ];
+
+
+export const navCategory = [
+  {
+    id: 1,
+    name: 'Desktop',
+    subCategory: [
+      {
+        id:1,
+        name: 'Star PC'
+      },
+      {
+        id:2,
+        name: 'Gaming PC'
+      },
+      {
+        id:3,
+        name: 'Brand PC'
+      },
+    ] 
+  },
+  {
+    id: 2,
+    name: 'Laptop',
+    subCategory: [
+      {
+        id:1,
+        name: 'Gaming Laptop'
+      },
+      {
+        id:2,
+        name: 'Premium Ultrabook'
+      },
+      {
+        id:3,
+        name: 'All Laptop'
+      },
+    ] 
+  },
+
+  {
+    id: 3,
+    name: 'Component',
+    subCategory: [
+      {
+        id:1,
+        name: 'Processor'
+      },
+      {
+        id:2,
+        name: 'Motherboard'
+      },
+      {
+        id:3,
+        name: 'RAM'
+      },
+      {
+        id:4,
+        name: 'Power Supply'
+      },
+      {
+        id:5,
+        name: 'Casing'
+      },
+    ] 
+  },
+  {
+    id: 4,
+    name: "Monitor",
+    subCategory: []
+  },
+  {
+    id: 5,
+    name: "UPS",
+    subCategory: []
+  },
+  {
+    id: 6,
+    name: "Office Equipement",
+    subCategory: []
+  },
+  {
+    id: 7,
+    name: "Security",
+    subCategory: []
+  },
+  {
+    id: 7,
+    name: "Networking",
+    subCategory: []
+  },
+]

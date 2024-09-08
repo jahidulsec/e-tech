@@ -19,7 +19,7 @@ function SearchSection({
         show ? "max-h-[10rem]" : "max-h-0"
       } transition-all duration-500 origin-top border-b mx-5 2xl:container 2xl:mx-auto flex justify-center items-center`}
     >
-      <div className={`relative ${show ? 'opacity-100' : 'opacity-0'} transition-all duration-300`}>
+      <div className={`relative ${show ? 'opacity-100' : 'opacity-0 pointer-events-none'} transition-all duration-300`}>
         <Input
           type="search"
           placeholder="Search by product title or category"
