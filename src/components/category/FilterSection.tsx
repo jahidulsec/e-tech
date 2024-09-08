@@ -7,10 +7,10 @@ function FilterSection() {
   return (
     <>
       <div className="border-y px-4 md:px-8 flex justify-between items-center gap-5">
-        <div className="left flex gap-3 items-center">
+        <div className="left flex gap-1 items-center">
           <Button variant={"text"} className="text-muted-foreground text-xs">
             <Filter className="size-4 mr-2 " />
-            <span>2 filters</span>
+            <span>filter</span>
           </Button>
 
           <Separator orientation="vertical" className="h-5" />
