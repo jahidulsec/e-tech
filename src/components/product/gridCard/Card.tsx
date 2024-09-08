@@ -18,7 +18,7 @@ function Card({
 
   return (
     <>
-      <Link role="article" href={`/product/${id}`} className="p-5 border-r border-b group hover:cursor-pointer" >
+      <Link key={id} role="article" href={`/product/${id}`} className="p-5 border-r border-b group hover:cursor-pointer" >
         <div className="w-full aspect-square p-10 bg-gray-50 dark:bg-accent-foreground rounded overflow-hidden mb-5">
           <div className="relative w-full mix-blend-multiply group-hover:scale-125 aspect-square transition-all duration-500">
             <Image fill objectFit="cover" src={imagePath} alt="" />

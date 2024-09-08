@@ -21,7 +21,7 @@ function ProductSection({sectionTitle}: ProductSectionProps) {
       {/* product section */}
       <CardContainer>
         {trendingProducts.map((item) => (
-          <Card {...item} />
+          <Card key={item.id} {...item} />
         ))}
       </CardContainer>
     </section>

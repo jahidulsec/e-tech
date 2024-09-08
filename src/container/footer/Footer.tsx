@@ -12,7 +12,7 @@ function Footer() {
 
         <div className="nav grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-20">
           {footerItems.map((item) => (
-            <NavList {...item} />
+            <NavList key={item.id} {...item} />
           ))}
         </div>
 

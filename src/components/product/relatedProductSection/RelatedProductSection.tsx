@@ -16,7 +16,7 @@ function RelatedProductSection() {
         <CardContainer>
             {
                 trendingProducts.slice(0,4).map(item => (
-                    <Card {...item} />
+                    <Card key={item.id} {...item} />
                 ))
             }
         </CardContainer>

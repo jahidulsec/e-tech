@@ -9,7 +9,7 @@ function ProductSection() {
       <div className="px-4 md:px-8 xl:container mx-auto mb-20">
         <CardContainer className="mt-0 border-t-0">
           {trendingProducts.map((item) => (
-            <Card {...item} />
+            <Card key={item.id} {...item} />
           ))}
         </CardContainer>
       </div>

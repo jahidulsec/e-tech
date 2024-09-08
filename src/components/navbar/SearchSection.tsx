@@ -16,7 +16,7 @@ function SearchSection({
   return (
     <section
       className={`${
-        show ? "scale-y-100" : "scale-y-0"
+        show ? "max-h-[10rem]" : "max-h-0"
       } transition-all duration-500 origin-top border-b mx-5 2xl:container 2xl:mx-auto flex justify-center items-center`}
     >
       <div className={`relative ${show ? 'opacity-100' : 'opacity-0'} transition-all duration-300`}>

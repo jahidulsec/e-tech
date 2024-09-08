@@ -13,7 +13,7 @@ function FeaturedCategory() {
       {/* cards */}
       <div className="cards flex justify-center items-center gap-5 flex-wrap mt-6">
         {featuredCategory.map((item) => (
-          <Card {...item} />
+          <Card key={item.id} {...item} />
         ))}
       </div>
     </section>

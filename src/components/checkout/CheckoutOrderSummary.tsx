@@ -11,7 +11,7 @@ function CheckoutOrderSummary() {
 
       <section className="card-container flex flex-col gap-5">
         {trendingProducts.slice(0, 2).map((item) => (
-          <Card {...item} />
+          <Card key={item.id} {...item} />
         ))}
       </section>
 

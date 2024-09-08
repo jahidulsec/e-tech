@@ -30,7 +30,7 @@ function ProductDetails({ data }: { data: typeof productData }) {
           </div>
 
           <p className="text-gray-700 dark:text-gray-300">
-            Don't compromise on snack-carrying capacity with this lightweight
+            Don&apos;t compromise on snack-carrying capacity with this lightweight
             and spacious bag. The drawstring top keeps all your favorite chips,
             crisps, fries, biscuits, crackers, and cookies secure.
           </p>
