@@ -36,8 +36,8 @@ function ImageSection({ data }: { data: typeof productData }) {
                   setSelectedImage(item.id - 1);
                 }}
               >
-                <div className="relative w-full aspect-square mix-blend-multiply">
-                  <Image src={item.imagePath} alt="" fill />
+                <div className="relative w-full aspect-video mix-blend-multiply">
+                  <Image src={item.imagePath} alt="" fill objectFit="cover" />
                 </div>
               </div>
             ))}
