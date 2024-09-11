@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <>
       <header className="sticky top-0 bg-background z-10">
-        <nav className="py-3 flex justify-between items-center md:grid md:grid-cols-3 border-b mx-5">
+        <nav className="py-3 flex justify-between items-center md:grid md:grid-cols-3 border-b px-3 md:px-5">
           {/* pc logo */}
           <div className="hidden md:block">
             <Logo />

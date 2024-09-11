@@ -16,12 +16,12 @@ function SearchSection({
   return (
     <section
       className={`${
-        show ? "max-h-[10rem]" : "max-h-0"
-      } transition-all duration-500 origin-top border-b mx-5 2xl:container 2xl:mx-auto flex justify-center items-center`}
+        show ? "max-h-[10rem] border-b" : "max-h-0"
+      } transition-all duration-500 origin-top mx-5 2xl:container 2xl:mx-auto flex justify-center items-center`}
     >
       <div className={`relative ${show ? 'opacity-100' : 'opacity-0 pointer-events-none'} transition-all duration-300`}>
         <Input
-          type="search"
+          type="text"
           placeholder="Search by product title or category"
           id="search"
           className={`px-12 text-center min-w-[90vw] border-none
