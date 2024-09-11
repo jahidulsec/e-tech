@@ -13,39 +13,39 @@ function CheckoutForm() {
   const [deliveryMethod, setDeliverMethod] = useState("cash-on-delivery");
 
   return (
-    <section className="px-4 md:pr-0 md:pl-8">
+    <section className="px-5 md:pr-0 md:pl-8">
       <form action="" className={style.form}>
         <PageHeading className="pt-5 pb-3">Checkout</PageHeading>
         <section className="border-y py-10">
           <h3 className="mb-8 text-xl font-medium">Shipping Information</h3>
 
-          <div className="grid grid-cols-6 gap-5">
-            <p className="col-span-3">
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-5">
+            <p className="md:col-span-3">
               <Label htmlFor="firstName ">First name</Label>
               <Input id="firstName" />
             </p>
-            <p className="col-span-3">
+            <p className="md:col-span-3">
               <Label htmlFor="lastName">Last name</Label>
               <Input id="lastName" />
             </p>
 
-            <p className="col-span-6">
+            <p className="md:col-span-6">
               <Label htmlFor="address">Address</Label>
               <Input id="address" />
             </p>
-            <p className="col-span-2">
+            <p className="md:col-span-2">
               <Label htmlFor="postCode">Post code</Label>
               <Input id="postCode" />
             </p>
-            <p className="col-span-2">
+            <p className="md:col-span-2">
               <Label htmlFor="district">District</Label>
               <Input id="district" />
             </p>
-            <p className="col-span-2">
+            <p className="md:col-span-2">
               <Label htmlFor="division">Division</Label>
               <Input id="division" />
             </p>
-            <p className="col-span-6">
+            <p className="md:col-span-6">
               <Label htmlFor="phone">Phone</Label>
               <Input type="tel" id="phone" />
             </p>
@@ -75,7 +75,7 @@ function CheckoutForm() {
           </div>
         </section>
 
-        <section className="md:py-10 flex flex-col gap-8">
+        <section className="pt-5 md:py-10 flex flex-col gap-8">
           <div className="flex gap-3">
             <Checkbox id="terms" />
             <label
