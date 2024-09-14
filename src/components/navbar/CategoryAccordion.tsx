@@ -19,7 +19,7 @@ function CategoryAccordion({
     <>
       <li>
         <button
-          className="header flex justify-between items-center gap-5 py-3 border-b last:border-none w-full"
+          className="header flex justify-between items-center gap-5 py-3 border-b w-full "
           onClick={() => {
             if(subCategory.length > 0) {
               setShowContent(!showContent);
@@ -29,7 +29,7 @@ function CategoryAccordion({
             }
           }}
         >
-          <h4>{name}</h4>
+          <h4 className="text-xs">{name}</h4>
           {subCategory.length > 0 && (
             <Plus
               className={`size-4 ${
@@ -48,7 +48,7 @@ function CategoryAccordion({
           {subCategory.map((subcat) => (
             <li
               key={subcat.id}
-              className="py-2 cursor-pointer hover:text-tertiary"
+              className="py-2 cursor-pointer hover:text-tertiary text-xs"
               onClick={() => {
                 router.push(`/category/${id}`);
                 onClose();

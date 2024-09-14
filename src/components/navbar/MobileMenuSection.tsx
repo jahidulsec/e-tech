@@ -29,7 +29,7 @@ function MobileMenuSection() {
         <SheetContent side={"left"} className="pt-14">
           <ScrollArea className="h-[90vh]">
             <section>
-              <h3 className="border-b pb-3 text-secondary">Products</h3>
+              <h3 className="border-b pb-3 text-sm font-medium text-primary">Products</h3>
               <ul className="text-sm flex flex-col gap-1 mx-3">
                 {navCategory.map((item) => (
                   <CategoryAccordion
@@ -44,10 +44,10 @@ function MobileMenuSection() {
             </section>
             <section className="mt-5 border-t">
               <Link href={''} onClick={() => {setOpenSideMenu(false)}}>
-                <h3 className=" py-3 text-secondary">About</h3>
+                <h3 className=" py-2 text-sm font-medium text-primary">About</h3>
               </Link>
               <Link href={''} onClick={() => {setOpenSideMenu(false)}}>
-                <h3 className=" py-3 text-secondary">Stores</h3>
+                <h3 className=" py-2 text-sm font-medium text-primary">Stores</h3>
               </Link>
             </section>
           </ScrollArea>

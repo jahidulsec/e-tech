@@ -34,7 +34,7 @@ function ProductCategoryNav({
                 {item.subCategory.map((cat) => (
                   <Link
                     href={""}
-                    className={`${styles.subCategory} text-xs hover:text-primary hover:bg-blue-50 hover:px-6 rounded-full py-1 transition-all duration-300`}
+                    className={`${styles.subCategory} text-xs hover:text-primary dark:text-white hover:bg-blue-50 dark:hover:bg-blue-700 hover:px-6 rounded-full py-1 transition-all duration-300`}
                     key={cat.id}
                   >
                     {cat.name}
