@@ -14,7 +14,7 @@
     transition: transform 400ms;
 }
 
-.button:hover::after {
+.button:hover::after, .button.active::after {
     transform: scale(1, 1);
     transition: transform 400ms;
 }

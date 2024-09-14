@@ -13,6 +13,7 @@ import ProductCategoryNav from "@/components/navbar/productCategoryNav/ProductCa
 
 export default function Navbar() {
   const [showSearchBar, setShowSearchBar] = useState(false);
+  const [showProductCategoryBar, setShowProductCategoryBar] = useState(false);
 
   return (
     <>
@@ -36,7 +37,10 @@ export default function Navbar() {
             </div>
 
             {/* desktop middle */}
-            <NavSection />
+            <NavSection
+              showProductCategoryBar={showProductCategoryBar}
+              setShowProductCategoryBar={setShowProductCategoryBar}
+            />
           </div>
 
           {/* mobile logo */}
@@ -57,7 +61,7 @@ export default function Navbar() {
           }}
         />
 
-        <ProductCategoryNav />
+        <ProductCategoryNav showProductCategoryBar={showProductCategoryBar} />
       </header>
     </>
   );

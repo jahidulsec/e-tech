@@ -3,9 +3,9 @@ import Link from "next/link";
 import React from "react";
 import styles from "./styles.module.css";
 
-function ProductCategoryNav() {
+function ProductCategoryNav({showProductCategoryBar}: {showProductCategoryBar: boolean}) {
   return (
-    <div className="border-b shadow-sm">
+    <div className={`${showProductCategoryBar ? "max-h-[30rem] opacity-100" : "max-h-0 opacity-0 pointer-events-none overflow-hidden"} border-b shadow-sm transition-all duration-300`}>
       <ul role="list" className="container px-8 mx-auto flex gap-8 text-sm">
         {navCategory.map((item) => (
           <li key={item.id} className={`${styles.li} py-3 relative group`}>

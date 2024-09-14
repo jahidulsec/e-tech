@@ -4,11 +4,11 @@ import React, { ReactNode } from "react";
 import { Button } from "../../ui/button";
 import styles from "./navlink.module.css";
 
-const NavLink = ({ children }: { children: ReactNode }) => {
+const NavLink = ({ children, isActive }: {isActive?: boolean, children: ReactNode }) => {
   return (
     <Button
       variant={"text"}
-      className={`relative w-full ${styles.button} font-normal`}
+      className={`relative w-full ${isActive ? styles.active : ''} ${styles.button} font-normal`}
     >
       {children}
     </Button>
