@@ -13,7 +13,7 @@ function CheckoutForm() {
   const [deliveryMethod, setDeliverMethod] = useState("cash-on-delivery");
 
   return (
-    <section className="px-5 md:pr-0 md:pl-8">
+    <section className="mx-10 md:mx-20">
       <form action="" className={style.form}>
         <PageHeading className="pt-5 pb-3">Checkout</PageHeading>
         <section className="border-y py-10">
@@ -55,7 +55,7 @@ function CheckoutForm() {
         <section className="py-10 border-b">
           <h3 className="mb-8 text-xl font-medium">Delivery Method</h3>
 
-          <div className="flex gap-5">
+          <div className="flex gap-5 flex-wrap">
             <MethodButton
               value="cash-on-delivery"
               title="Cash on delivery"

@@ -6,7 +6,7 @@ import Card from "./Card";
 
 function CheckoutOrderSummary() {
   return (
-    <section className="bg-gray-100 dark:bg-blue-950 pt-5 px-4 md:px-10 md:py-[8rem] -my-6 ">
+    <section className="bg-gray-50 dark:bg-blue-950 pt-5 px-10 md:px-10 md:py-[8rem] -my-6 ">
       <h3 className="text-xl font-medium mb-8">Order Summary</h3>
 
       <section className="card-container flex flex-col gap-5">

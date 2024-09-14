@@ -16,7 +16,7 @@ function MethodButton({
 }) {
   return (
     <div
-      className={`radio w-[10.5rem] md:w-[13rem] text-sm p-3 border cursor-pointer rounded transition-all duration-500 ${
+      className={`radio grow w-[10.5rem] md:w-[13rem] text-sm p-3 border cursor-pointer rounded transition-all duration-500 ${
         deliveryMethod === value
           ? `border-primary text-primary`
           : "text-muted-foreground"

@@ -10,7 +10,7 @@ function Footer() {
       <div className="xl:container py-10 mx-auto w-full border-t flex flex-col items-center gap-20">
         <Logo />
 
-        <div className="nav grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-20">
+        <div className="nav grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-20">
           {footerItems.map((item) => (
             <NavList key={item.id} {...item} />
           ))}

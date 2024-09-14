@@ -18,22 +18,22 @@ import { X } from "lucide-react";
 
 function Card({ id, imagePath, name, price }: (typeof trendingProducts)[0]) {
   return (
-    <article key={id} className="flex items-center gap-5 border-t [&:last-child:border-b] py-10">
+    <article key={id} className="flex items-center gap-5 border-t [&:last-child:border-b] py-5">
       {/* image */}
-      <div className="min-w-[120px] md:min-w-[180px] aspect-square p-5 bg-gray-50 dark:bg-accent-foreground rounded overflow-hidden mb-5">
+      <div className="min-w-[100px] md:min-w-[120px] aspect-square p-3 bg-gray-50 dark:bg-accent-foreground rounded overflow-hidden mb-5">
         <div className="relative w-full aspect-square mix-blend-multiply">
           <Image src={imagePath} alt="" fill objectFit="cover" />
         </div>
       </div>
 
       {/* description */}
-      <div className="flex flex-col justify-between gap-5 md:h-[10rem]">
-        <div className="flex flex-col gap-3">
+      <div className="flex flex-col justify-between gap-3 md:h-[8rem]">
+        <div className="flex flex-col gap-2">
           <h4 className="line-clamp-1 font-semibold text-xs md:text-sm">{name}</h4>
           <CurrencyText className="text-xs md:text-sm" currency={price} />
 
           <Select defaultValue="1">
-            <SelectTrigger className="w-[80px] text-xs h-8 md:h-10">
+            <SelectTrigger className="w-[80px] text-xs h-8">
               <SelectValue placeholder="Unit" />
             </SelectTrigger>
             <SelectContent>
