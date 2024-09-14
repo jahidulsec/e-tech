@@ -1,12 +1,12 @@
-import CategoryPageContainer from '@/container/category/CategoryPageContainer'
-import React from 'react'
+import CategoryPageContainer from "@/container/category/CategoryPageContainer";
+import React from "react";
 
 function CategoryPage() {
   return (
     <>
-        <CategoryPageContainer />
+      <CategoryPageContainer />
     </>
-  )
+  );
 }
 
-export default CategoryPage
+export default CategoryPage;

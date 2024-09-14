@@ -19,7 +19,7 @@ function CategoryAccordion({
     <>
       <li>
         <button
-          className="header flex justify-between items-center gap-5 py-3 border-b w-full "
+          className="header flex justify-between items-center gap-5 py-3 border-b last:border-0 w-full "
           onClick={() => {
             if(subCategory.length > 0) {
               setShowContent(!showContent);

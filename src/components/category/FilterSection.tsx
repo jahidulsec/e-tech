@@ -1,36 +1,14 @@
 import React from "react";
-import { Button } from "../ui/button";
-import { ChevronDown, Filter } from "lucide-react";
-import { Separator } from "../ui/separator";
+import FilterSideBar from "./filterSection/FilterSideBar";
+import SortingSection from "./filterSection/SortingSection";
 
-function FilterSection() {
+export default function FilterSection() {
   return (
     <>
-      <div className="border-y px-4 md:px-8 flex justify-between items-center gap-5">
-        <div className="left flex gap-1 items-center">
-          <Button variant={"text"} className="text-muted-foreground text-xs">
-            <Filter className="size-4 mr-2 " />
-            <span>filter</span>
-          </Button>
-
-          <Separator orientation="vertical" className="h-5" />
-
-          <Button variant={"text"} className="text-muted-foreground  text-xs">
-            Clear all
-          </Button>
-        </div>
-        <div className="right">
-          <Button
-            variant={"text"}
-            className="text-muted-foreground flex items-center text-xs"
-          >
-            <span>Sort</span>
-            <ChevronDown className="size-3 ml-2" />
-          </Button>
-        </div>
+      <div className="sticky top-[4rem] bg-background z-[1] h-full border-y px-4 md:px-8 flex justify-between items-center gap-5">
+        <FilterSideBar />
+        <SortingSection />
       </div>
     </>
   );
 }
-
-export default FilterSection;

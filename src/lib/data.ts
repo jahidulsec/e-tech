@@ -279,3 +279,49 @@ export const navCategory = [
     subCategory: []
   },
 ]
+
+
+export const filterType = [
+  {
+    id: 1,
+    name: 'Category',
+    filters: [
+      {
+        id: 1,
+        name: 'Desktop'
+      },
+      {
+        id: 2,
+        name: 'Laptop'
+      },
+      {
+        id: 3,
+        name: 'Component'
+      },
+      {
+        id: 4,
+        name: 'Motherboard'
+      },
+
+    ]
+  },
+  {
+    id: 2,
+    name: 'Brand',
+    filters: [
+      {
+        id: 1,
+        name: 'Asus'
+      },
+      {
+        id: 2,
+        name: 'HP'
+      },
+      {
+        id: 3,
+        name: 'Dell'
+      },
+
+    ]
+  }
+]
