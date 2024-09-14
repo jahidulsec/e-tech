@@ -17,9 +17,9 @@ function SearchSection({
     <section
       className={`${
         show ? "max-h-[10rem] border-b" : "max-h-0"
-      } transition-all duration-500 origin-top mx-5 2xl:container 2xl:mx-auto flex justify-center items-center`}
+      } transition-all duration-500 origin-top flex justify-center items-center`}
     >
-      <div className={`relative ${show ? 'opacity-100' : 'opacity-0 pointer-events-none'} transition-all duration-300`}>
+      <div className={`relative ${show ? 'opacity-100' : 'opacity-0 pointer-events-none'} 2xl:container 2xl:mx-auto  transition-all duration-300`}>
         <Input
           type="text"
           placeholder="Search by product title or category"

@@ -1,8 +1,6 @@
 "use client";
 
-import { Menu } from "lucide-react";
 import HeaderSearch from "../../components/Search/HeaderSearch";
-import { Button } from "../../components/ui/button";
 import Logo from "@/components/logo/Logo";
 import SearchSection from "@/components/navbar/SearchSection";
 import { useState } from "react";
@@ -48,7 +46,7 @@ export default function Navbar() {
             <Logo />
           </div>
 
-          {/* right side */}
+          {/* right side buttons */}
           <RightSection setShowSearchBar={setShowSearchBar} />
 
           {/* desktop end */}

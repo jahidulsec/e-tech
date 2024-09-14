@@ -3,9 +3,19 @@ import Link from "next/link";
 import React from "react";
 import styles from "./styles.module.css";
 
-function ProductCategoryNav({showProductCategoryBar}: {showProductCategoryBar: boolean}) {
+function ProductCategoryNav({
+  showProductCategoryBar,
+}: {
+  showProductCategoryBar: boolean;
+}) {
   return (
-    <div className={`${showProductCategoryBar ? "max-h-[30rem] opacity-100" : "max-h-0 opacity-0 pointer-events-none overflow-hidden"} border-b shadow-sm transition-all duration-300`}>
+    <div
+      className={`${
+        showProductCategoryBar
+          ? "max-h-[30rem] opacity-100"
+          : "max-h-0 opacity-0 pointer-events-none overflow-hidden"
+      } hidden md:block border-b shadow-sm transition-all duration-300`}
+    >
       <ul role="list" className="container px-8 mx-auto flex gap-8 text-sm">
         {navCategory.map((item) => (
           <li key={item.id} className={`${styles.li} py-3 relative group`}>
@@ -18,9 +28,15 @@ function ProductCategoryNav({showProductCategoryBar}: {showProductCategoryBar: b
 
             {/* sub category list */}
             {item.subCategory.length > 0 && (
-              <div className={`bg-background border rounded ${styles.subCategoryContainer}`}>
+              <div
+                className={`bg-background border rounded ${styles.subCategoryContainer}`}
+              >
                 {item.subCategory.map((cat) => (
-                  <Link href={''} className={`${styles.subCategory} text-xs hover:text-primary hover:bg-blue-50 hover:px-6 rounded-full py-1 transition-all duration-300`} key={cat.id}>
+                  <Link
+                    href={""}
+                    className={`${styles.subCategory} text-xs hover:text-primary hover:bg-blue-50 hover:px-6 rounded-full py-1 transition-all duration-300`}
+                    key={cat.id}
+                  >
                     {cat.name}
                   </Link>
                 ))}
