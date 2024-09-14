@@ -1,0 +1,18 @@
+.subCategoryContainer {
+    position: absolute;
+    top: 2.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-wrap: nowrap;
+    min-width: max(100%, 13rem);
+    padding: 1rem;
+    opacity: 0;
+    transform: translateY(-1rem);
+    transition: all 300ms ease-in-out;
+}
+
+.li:hover .subCategoryContainer {
+    opacity: 1;
+    transform: translateY(0);
+}   

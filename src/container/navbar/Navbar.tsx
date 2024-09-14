@@ -9,6 +9,7 @@ import { useState } from "react";
 import RightSection from "@/components/navbar/RightSection";
 import NavSection from "@/components/navbar/NavSection";
 import MobileMenuSection from "@/components/navbar/MobileMenuSection";
+import ProductCategoryNav from "@/components/navbar/productCategoryNav/ProductCategoryNav";
 
 export default function Navbar() {
   const [showSearchBar, setShowSearchBar] = useState(false);
@@ -55,6 +56,8 @@ export default function Navbar() {
             setShowSearchBar(false);
           }}
         />
+
+        <ProductCategoryNav />
       </header>
     </>
   );
