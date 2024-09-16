@@ -25,7 +25,7 @@ function SortingSection() {
               onClick={() => setShowMenu(true)}
             >
               <span>Sort</span>
-              <ChevronDown className={`size-3 ml-2 ${showMenu ? "" : "-rotate-180"} transition-all duration-300`} />
+              <ChevronDown className={`size-3 ml-2 ${!showMenu ? "" : "-rotate-180"} transition-all duration-300`} />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent>

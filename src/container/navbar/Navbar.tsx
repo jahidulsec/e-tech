@@ -62,7 +62,7 @@ export default function Navbar() {
           }}
         />
 
-        <ProductCategoryNav showProductCategoryBar={showProductCategoryBar} />
+        <ProductCategoryNav showProductCategoryBar={showProductCategoryBar} onClose={() => setShowProductCategoryBar(false)} />
       </header>
     </>
   );

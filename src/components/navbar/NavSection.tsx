@@ -15,8 +15,9 @@ function NavSection({
         onClick={() => {
           setShowProductCategoryBar(!showProductCategoryBar);
         }}
+        id={`product-nav-btn-container`}
       >
-        <NavLink isActive={showProductCategoryBar}>Products</NavLink>
+        <NavLink  isActive={showProductCategoryBar}>Products</NavLink>
       </li>
       <li>
         <NavLink>About</NavLink>
