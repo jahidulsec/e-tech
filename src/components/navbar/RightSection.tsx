@@ -1,3 +1,5 @@
+'use client'
+
 import React, { SetStateAction } from "react";
 import ThemeButton from "../buttons/ThemeButton";
 import HeaderSearch from "../Search/HeaderSearch";
@@ -7,7 +9,7 @@ import Link from "next/link";
 
 function RightSection({setShowSearchBar} : {setShowSearchBar: React.Dispatch<SetStateAction<boolean>>}) {
   return (
-    <div className="right flex items-center gap-3 md:gap-2 md:ml-auto">
+    <div className="right flex items-center gap-1 md:gap-2 md:ml-auto">
       <ThemeButton />
       <HeaderSearch
         className="hidden md:block"

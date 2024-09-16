@@ -16,16 +16,19 @@ export default function Navbar() {
   return (
     <>
       <header className="sticky top-0 bg-background z-10">
+        {/* nav bar */}
         <div className="border-b">
-          <nav className="py-3 md:px-8 2xl:container 2xl:mx-auto flex justify-between 
-          items-center md:grid md:grid-cols-3 px-3">
+          <nav
+            className="py-3 md:px-8 2xl:container 2xl:mx-auto flex justify-between 
+          items-center md:grid md:grid-cols-3 px-3"
+          >
             {/* pc logo */}
             <div className="hidden md:block">
               <Logo />
             </div>
 
-            {/* nav middle*/}
-            <div className="middle md:mx-auto">
+            {/* nav left*/}
+            <div className="left md:mx-auto">
               {/* mobile left */}
               <div className="icons text-gray-400 flex items-center gap-1 md:gap-5 md:hidden">
                 <MobileMenuSection />
@@ -55,6 +58,7 @@ export default function Navbar() {
           </nav>
         </div>
 
+        {/* search bar */}
         <SearchSection
           show={showSearchBar}
           onClose={() => {
@@ -62,7 +66,11 @@ export default function Navbar() {
           }}
         />
 
-        <ProductCategoryNav showProductCategoryBar={showProductCategoryBar} onClose={() => setShowProductCategoryBar(false)} />
+        {/* product nav bar */}
+        <ProductCategoryNav
+          showProductCategoryBar={showProductCategoryBar}
+          onClose={() => setShowProductCategoryBar(false)}
+        />
       </header>
     </>
   );

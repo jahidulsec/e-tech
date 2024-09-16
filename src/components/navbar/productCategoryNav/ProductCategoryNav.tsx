@@ -20,7 +20,6 @@ function ProductCategoryNav({
 
     const handler = (e: any) => {
       if ((!productNavBtn?.contains(e.target) && e.target !== productNavBtn) && !navRef.current?.contains(e.target)) {
-        console.log(navRef.current);
         onClose();
       }
     };
