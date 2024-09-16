@@ -1,6 +1,6 @@
 "use client";
 
-import HeaderSearch from "../../components/Search/HeaderSearch";
+import HeaderSearch from "../Search/HeaderSearch";
 import Logo from "@/components/logo/Logo";
 import SearchSection from "@/components/navbar/SearchSection";
 import { useState } from "react";
@@ -15,7 +15,6 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 bg-background z-10">
         {/* nav bar */}
         <div className="border-b">
           <nav
@@ -71,7 +70,6 @@ export default function Navbar() {
           showProductCategoryBar={showProductCategoryBar}
           onClose={() => setShowProductCategoryBar(false)}
         />
-      </header>
     </>
   );
 }

@@ -1,5 +1,5 @@
-import Navbar from "@/container/navbar/Navbar";
 import Footer from "@/container/footer/Footer";
+import Header from "@/container/header/Header";
 
 export default function CustomerLayout({
   children,
@@ -8,7 +8,7 @@ export default function CustomerLayout({
 }>) {
   return (
     <div className="relative min-h-screen w-full h-full font-sans antialiased">
-      <Navbar />
+      <Header />
       <main className="w-full my-6">{children}</main>
       <Footer />
     </div>
