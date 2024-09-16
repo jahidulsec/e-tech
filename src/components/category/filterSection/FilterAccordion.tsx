@@ -6,7 +6,7 @@ import { Plus } from "lucide-react";
 import React, { useState } from "react";
 
 function FilterAccordion({ id, filters, name }: (typeof filterType)[0]) {
-  const [showContent, setShowContent] = useState(false);
+  const [showContent, setShowContent] = useState(true);
 
   return (
     <div className="border-b last:border-0">
