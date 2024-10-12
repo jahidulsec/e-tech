@@ -30,6 +30,7 @@ type CarouselContextProps = {
   canScrollNext: boolean;
   current: number;
   count: number;
+  onButtonClick: (index: number) => void
 } & CarouselProps;
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null);
@@ -91,6 +92,10 @@ const Carousel = React.forwardRef<
       api?.scrollNext();
     }, [api]);
 
+    const onButtonClick = React.useCallback((index: number) => {
+      api?.scrollTo(index);
+    }, [api]);
+
     const handleKeyDown = React.useCallback(
       (event: React.KeyboardEvent<HTMLDivElement>) => {
         if (event.key === "ArrowLeft") {
@@ -142,6 +147,7 @@ const Carousel = React.forwardRef<
           canScrollNext,
           current,
           count,
+          onButtonClick
         }}
       >
         <div
@@ -269,7 +275,7 @@ const CarouselDotButtons = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
 >(({ className, variant = "outline", size = "icon", ...props }, ref) => {
-  const { count, current } = useCarousel();
+  const { count, current, onButtonClick } = useCarousel();
 
   return (
     <div className="absolute left-[50%] bottom-5 md:bottom-10 -translate-x-[50%] flex gap-3 items-center">
@@ -280,6 +286,7 @@ const CarouselDotButtons = React.forwardRef<
             current === item ? `w-6 md:w-8 bg-tertiary` : `w-2 md:w-3 bg-gray-100`
           } transition-all duration-500 h-2 md:h-3 rounded-full`}
           key={item}
+          onClick={() => onButtonClick(item - 1)}
         >
           <span className="sr-only">Carousel Buttons</span>
         </button>
